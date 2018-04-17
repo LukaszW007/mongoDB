@@ -1,0 +1,10 @@
+2018-04-17T20:45:55.874550+00:00 app[web.1]:     at Object.<anonymous> (/app/server.js:5:10)
+2018-04-17T20:45:55.874552+00:00 app[web.1]:     at Module._compile (module.js:652:30)
+2018-04-17T20:45:55.874554+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:663:10)
+2018-04-17T20:45:55.874556+00:00 app[web.1]:     at Module.load (module.js:565:32)
+2018-04-17T20:45:55.874557+00:00 app[web.1]:     at tryModuleLoad (module.js:505:12)
+2018-04-17T20:45:55.874737+00:00 app[web.1]: (node:20) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+2018-04-17T20:45:55.874904+00:00 app[web.1]: (node:20) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-17T20:45:55.944920+00:00 heroku[web.1]: Process exited with status 0
+2018-04-17T20:45:55.965352+00:00 heroku[web.1]: State changed from starting to crashed
+2018-04-17T20:46:15.051106+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=ancient-forest-45297.herokuapp.com request_id=6a3acd9e-ec9b-470b-b72e-57866866aa17 fwd="77.110.237.110" dyno= connect= service= status=503 bytes= protocol=https
