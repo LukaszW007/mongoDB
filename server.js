@@ -43,7 +43,7 @@ const User = mongoose.model('User', userSchema);
 //instancje klasy User
 const kenny = new User({
     name: 'Kenny',
-    username: 'Kenny_the_boy',
+    username: 'Kenny-the-boy',
     password: 'password'
 });
 
@@ -54,7 +54,7 @@ kenny.manify(function(err, name) {
 
 const benny = new User({
     name: 'Benny',
-    username: 'Benny_the_boy',
+    username: 'Benny-the-boy',
     password: 'password'
 });
 
@@ -65,7 +65,7 @@ benny.manify(function(err, name) {
 
 const mark = new User({
     name: 'Mark',
-    username: 'Mark_the_boy',
+    username: 'Mark-the-boy',
     password: 'password'
 });
 

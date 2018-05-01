@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "mongod": "mkdir mongo-db && \"C:/Program Files/MongoDB/Server/3.6/bin/mongod.exe\" --dbpath mongo-db",
+    "mongod": "mkdirp mongo-db && \"C:/Program Files/MongoDB/Server/3.6/bin/mongod.exe\" --dbpath mongo-db",
     "mongo": " \"C:/Program Files/MongoDB/Server/3.6/bin/mongo.exe\""
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/LukaszW007/mongoDB#readme",
   "dependencies": {
+    "mkdirp": "^0.5.1",
     "mongoose": "^5.0.15"
   }
 }
