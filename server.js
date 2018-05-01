@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://<sakul>:<Wisnia007>@ds247439.mlab.com:47439/sakuldatabase', {
+mongoose.connect('mongodb://<sakul>:<mLab123>@ds247439.mlab.com:47439/sakuldatabase');/*, {
     useMongoClient: true
-});
+});*/
 
 //new user Schema
 const userSchema = new Schema({
@@ -80,7 +80,7 @@ const findAllUsers = function() {
         if (err) throw err;
         console.log('Actual database records are ' + res);
     });
-}
+};
 
 const findSpecificRecord = function() {
     // find specific record
@@ -88,7 +88,7 @@ const findSpecificRecord = function() {
         if (err) throw err;
         console.log('Record you are looking for is ' + res);
     })
-}
+};
 
 const updadeUserPassword = function() {
     // update user password
@@ -104,7 +104,7 @@ const updadeUserPassword = function() {
                 console.log('Uzytkownik ' + user.name + ' zostal pomyslnie zaktualizowany');
             })
         })
-}
+};
 
 const updateUsername = function() {
     // update username
@@ -113,7 +113,7 @@ const updateUsername = function() {
 
         console.log('Nazwa uzytkownika po aktualizacji to ' + user.username);
     })
-}
+};
 
 const findMarkAndDelete = function() {
     // find specific user and delete
@@ -123,7 +123,7 @@ const findMarkAndDelete = function() {
                 console.log('User successfully deleted');
             });
         })
-}
+};
 
 const findKennyAndDelete = function() {
     // find specific user and delete
@@ -133,7 +133,7 @@ const findKennyAndDelete = function() {
                 console.log('User successfully deleted');
             });
         });
-}
+};
 
 const findBennyAndRemove = function() {
     // find specific user and delete
@@ -143,7 +143,7 @@ const findBennyAndRemove = function() {
                 console.log('User successfully deleted');
             });
         });
-}
+};
 
 Promise.all([kenny.save(), mark.save(), benny.save()])
     .then(findAllUsers)
@@ -153,4 +153,4 @@ Promise.all([kenny.save(), mark.save(), benny.save()])
     .then(findMarkAndDelete)
     .then(findKennyAndDelete)
     .then(findBennyAndRemove)
-    .catch(console.log.bind(console))
+    .catch(console.log.bind(console));

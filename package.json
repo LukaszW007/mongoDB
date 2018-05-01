@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "mongod": "mkdir mongo-db && \"C:/Program Files/MongoDB/Server/3.6/bin/mongod.exe\" --dbpath mongo-db",
+    "mongo": " \"C:/Program Files/MongoDB/Server/3.6/bin/mongo.exe\""
   },
   "repository": {
     "type": "git",
