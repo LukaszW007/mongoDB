@@ -84,7 +84,7 @@ const findAllUsers = function() {
 
 const findSpecificRecord = function() {
     // find specific record
-    return User.find({ username: 'Kenny_the_boy' }, function(err, res) {
+    return User.find({ username: 'Kenny-the-boy' }, function(err, res) {
         if (err) throw err;
         console.log('Record you are looking for is ' + res);
     })
@@ -92,7 +92,7 @@ const findSpecificRecord = function() {
 
 const updadeUserPassword = function() {
     // update user password
-    return User.findOne({ username: 'Kenny_the_boy' })
+    return User.findOne({ username: 'Kenny-the-boy' })
         .then(function(user) {
             console.log('Old password is ' + user.password);
             console.log('Name ' + user.name);
@@ -108,7 +108,7 @@ const updadeUserPassword = function() {
 
 const updateUsername = function() {
     // update username
-    return User.findOneAndUpdate({ username: 'Benny_the_boy' }, { username: 'Benny_the_man' }, { new: true }, function(err, user) {
+    return User.findOneAndUpdate({ username: 'Benny-the-boy' }, { username: 'Benny-the-man' }, { new: true }, function(err, user) {
         if (err) throw err;
 
         console.log('Nazwa uzytkownika po aktualizacji to ' + user.username);
@@ -117,7 +117,7 @@ const updateUsername = function() {
 
 const findMarkAndDelete = function() {
     // find specific user and delete
-    return User.findOne({ username: 'Mark_the_boy' })
+    return User.findOne({ username: 'Mark-the-boy' })
         .then(function(user) {
             return user.remove(function() {
                 console.log('User successfully deleted');
@@ -127,7 +127,7 @@ const findMarkAndDelete = function() {
 
 const findKennyAndDelete = function() {
     // find specific user and delete
-    return User.findOne({ username: 'Kenny_the_boy' })
+    return User.findOne({ username: 'Kenny-the-boy' })
         .then(function(user) {
             return user.remove(function() {
                 console.log('User successfully deleted');
@@ -137,7 +137,7 @@ const findKennyAndDelete = function() {
 
 const findBennyAndRemove = function() {
     // find specific user and delete
-    return User.findOneAndRemove({ username: 'Benny_the_man' })
+    return User.findOneAndRemove({ username: 'Benny-the-man' })
         .then(function(user) {
             return user.remove(function() {
                 console.log('User successfully deleted');
